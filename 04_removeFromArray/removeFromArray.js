@@ -1,4 +1,13 @@
-const removeFromArray = function() {
+let testArray;
+let toBeRemoved;
+
+const removeFromArray = function(testArray, toBeRemoved) {
+
+    indexToBeRemoved = testArray.indexOf(toBeRemoved);
+    if (indexToBeRemoved > -1){
+        return testArray.splice(indexToBeRemoved,1);
+        console.log(testArray);
+    }
 
 };
 
