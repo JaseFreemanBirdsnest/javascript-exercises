@@ -1,14 +1,9 @@
-let testArray;
-let toBeRemoved;
+const removeFromArray = function(...args) {
 
-const removeFromArray = function(testArray, toBeRemoved) {
+    const array = args[0];
 
-    indexToBeRemoved = testArray.indexOf(toBeRemoved);
-    if (indexToBeRemoved > -1){
-        return testArray.splice(indexToBeRemoved,1);
-        console.log(testArray);
-    }
-
+    return array.filter(val => !args.includes(val));
+            
 };
 
 // Do not edit below this line
