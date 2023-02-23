@@ -1,6 +1,6 @@
 const palindromes = function (phrase) {
     
-    const preppedString = phrase.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+    const preppedString = phrase.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~() ]/g,"");
 
     return (
         preppedString
